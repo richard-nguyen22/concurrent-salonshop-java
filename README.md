@@ -5,22 +5,22 @@
 ## The Salon Shop problem
   ![Salon Shop](./images/salon.png)
 
-There are 3 barbars work independently in a salon shop:
-- The salon has 3 salon chairs, each of which is assigned to one barbar.
+There are 3 barbers work independently in a salon shop:
+- The salon has 3 salon chairs, each of which is assigned to one barber.
 - Due to budget restrictions, there are only 2 combs and 2 scissors in the salon.
 - There are 10 chairs in the sitting area and 10 spaces in the standing area.
 
-Each barbar follows the same work plan:
-- The barbar sleeps when no customer is waiting (and is not in the barbar's own chair).
-- When the barbar is asleep, the barbar waits to be awakened by a new customer.
-- Once awake, the barbar cuts the hair of a customer in the barbar's chair.
-- The barbar requires a comb and a pair of scissors to cut a customer’s hair. When the haircut is done, the customer pays the barbar and then is free to leave.
-- After receiving payment, the barbar calls the next waiting customer (if any). If such a customer exists, that customer sits in the barbar's chair and the barbar starts the next haircut. If no customer is waiting, the barbar goes back to sleep.
+Each barber follows the same work plan:
+- The barber sleeps when no customer is waiting (and is not in the barber's own chair).
+- When the barber is asleep, the barber waits to be awakened by a new customer.
+- Once awake, the barber cuts the hair of a customer in the barber's chair.
+- The barber requires a comb and a pair of scissors to cut a customer’s hair. When the haircut is done, the customer pays the barber and then is free to leave.
+- After receiving payment, the barber calls the next waiting customer (if any). If such a customer exists, that customer sits in the barber's chair and the barber starts the next haircut. If no customer is waiting, the barber goes back to sleep.
 
 Each customer follows the following sequence of events:
 - When the customer first enters the salon, the customer leaves immediately if more than 20 people are waiting (10 standing and 10 sitting). On the other hand, if the salon is not too full, the customer enters and waits.
--	If at least one barbar is sleeping, the customer wakes up the barbar who is sleeping, and sits in that barbar’s chair (after the barbar has stood up).
--	If all barbars are busy, the customer sits in a waiting-room chair, if one is available. Otherwise, the customer remains standing until a waiting-room chair becomes available.
+-	If at least one barber is sleeping, the customer wakes up the barber who is sleeping, and sits in that barber’s chair (after the barber has stood up).
+-	If all barbers are busy, the customer sits in a waiting-room chair, if one is available. Otherwise, the customer remains standing until a waiting-room chair becomes available.
 -	Customers keep track of their order, so the person sitting the longest is always the next customer to get a haircut.
 -	Similarly, standing customers remember their order, so the person standing the longest takes the next available waiting-room seat.
 
