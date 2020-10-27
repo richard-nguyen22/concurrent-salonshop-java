@@ -33,6 +33,9 @@ This Salon Shop is implemented in Java Netbeans using concurrent programming con
 -	setDaemon 
 - May not use the destroy or stop(0) primitives in - except to take care of temporary resources like simple timers. 
 
+## Concurrent Salon Shop Class diagram
+  ![Class diagram](./images/class-diagram.png)
+
 ## Run Concurrent Salon Shop System
 `main()` is in `MainSalon.java`. Run `MainSalon.java` to simulate concurrent Salon Shop System
 
